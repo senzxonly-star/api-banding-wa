@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     const { key, fromEmail, fromPass, to, subject, body } = req.body;
 
     // VALIDASI API KEY (Misal kita set key-nya: beckk001)
-    if (key !== 'beckk001') {
+    if (key !== 'sean123') {
         return res.status(401).json({ success: false, message: '🔐 API Key tidak valid!' });
     }
 
